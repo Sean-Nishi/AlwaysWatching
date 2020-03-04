@@ -161,7 +161,7 @@ int recording(cv::Mat frame, cv::VideoCapture real_time) {
 			cv::ellipse(frame, cv::Point(faces[i].x + faces[i].width * 0.5, faces[i].y + faces[i].height * 0.5), cv::Size(faces[i].width * 0.5, faces[i].height * 0.5), 0, 0, 360, cv::Scalar(255, 0, 255), 1, 8, 0);
 		}
 
-		//highlight detected faces
+		//highlight detected profile faces
 		for (int i = 0; i < profilefaces.size(); i++) {
 			cv::ellipse(frame, cv::Point(profilefaces[i].x + profilefaces[i].width * 0.5, profilefaces[i].y + profilefaces[i].height * 0.5), cv::Size(profilefaces[i].width * 0.5, profilefaces[i].height * 0.5), 0, 0, 360, cv::Scalar(255, 0, 255), 1, 8, 0);
 		}
